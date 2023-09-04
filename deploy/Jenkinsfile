@@ -11,5 +11,20 @@ pipeline {
                 sh'echo Testing stage'
             }
         }
+        stage('Package') {
+            steps {
+                sh'echo Packaging stage'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh'echo Deployment stage'
+            }
+        }
+        stage('Clean Up') {
+            steps {
+                sh'echo Clean up stage'
+            }
+        }
     }
 }
